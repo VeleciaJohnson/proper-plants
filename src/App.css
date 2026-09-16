@@ -1,0 +1,41 @@
+.app-layout {
+  display: grid;
+  width: min(1200px, calc(100% - 2rem));
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 350px);
+  align-items: start;
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 2.5rem 0;
+}
+
+.section-heading {
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h1 {
+  margin: 0;
+  color: #23452a;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.05;
+}
+
+.section-heading > p:last-child {
+  max-width: 620px;
+  margin: 0.85rem 0 0;
+  color: #5a695d;
+  line-height: 1.6;
+}
+
+@media (max-width: 850px) {
+  .app-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart {
+    position: static;
+  }
+
+  .cart-section {
+    order: -1;
+  }
+}

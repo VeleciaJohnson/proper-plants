@@ -1,0 +1,144 @@
+.cart {
+  position: sticky;
+  top: 1.25rem;
+  border: 1px solid #dce8dc;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 1.25rem;
+  box-shadow: 0 4px 14px rgb(31 65 39 / 7%);
+}
+
+.cart-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid #e4eee4;
+  padding-bottom: 1rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.25rem;
+  color: #397348;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.cart-heading h2 {
+  margin: 0;
+  color: #23452a;
+  font-size: 1.35rem;
+}
+
+.cart-count {
+  border-radius: 999px;
+  background: #e9f5e9;
+  padding: 0.35rem 0.6rem;
+  color: #265f35;
+  font-size: 0.8rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cart-items {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border-bottom: 1px solid #edf2ed;
+  padding-bottom: 0.85rem;
+}
+
+.cart-item:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.cart-item-image {
+  display: grid;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  place-items: center;
+  border-radius: 12px;
+  background: #eff8ef;
+  font-size: 1.9rem;
+}
+
+.cart-item-details {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.cart-item h3 {
+  margin: 0;
+  color: #2a3d2e;
+  font-size: 0.95rem;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid #cfe0d0;
+  border-radius: 8px;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: #f3faf3;
+  color: #2b6d3b;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.quantity-controls button:hover {
+  background: #dcefdc;
+}
+
+.quantity-controls span {
+  display: grid;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  color: #23452a;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.empty-cart {
+  padding: 2.5rem 1rem;
+  color: #5c6c60;
+  text-align: center;
+}
+
+.empty-cart span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 2.75rem;
+}
+
+.empty-cart p {
+  margin: 0;
+  color: #314d38;
+  font-weight: 700;
+}
+
+.empty-cart small {
+  display: block;
+  margin-top: 0.35rem;
+}
